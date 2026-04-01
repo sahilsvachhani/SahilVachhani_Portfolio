@@ -136,6 +136,9 @@
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
     .about-headline { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 3.5vw, 3.2rem); line-height: 1.05; letter-spacing: 1px; margin-top: 0.5rem; }
     .about-body { font-size: 0.9rem; color: var(--muted); line-height: 1.85; margin-bottom: 2.5rem; }
+    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+    .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.6rem; letter-spacing: 1px; color: var(--text); line-height: 1; }
+    .stat-label { font-size: 0.65rem; letter-spacing: 0.15em; color: var(--muted); text-transform: uppercase; margin-top: 0.3rem; }
     .pills { display: flex; flex-wrap: wrap; gap: 0.55rem; }
     .pill {
       font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase;
@@ -296,10 +299,28 @@
     <div>
       <div class="sec-label rv">About</div>
       <h2 class="about-headline rv d1">TURNING DATA<br>INTO DECISIONS<br>THAT MATTER</h2>
+      <div class="about-stats rv d2">
+        <div>
+          <div class="stat-num">3.5M+</div>
+          <div class="stat-label">Data Points Processed</div>
+        </div>
+        <div>
+          <div class="stat-num">50K+</div>
+          <div class="stat-label">Records Analyzed</div>
+        </div>
+        <div>
+          <div class="stat-num">95%</div>
+          <div class="stat-label">ML Model Accuracy</div>
+        </div>
+        <div>
+          <div class="stat-num">2</div>
+          <div class="stat-label">Internships</div>
+        </div>
+      </div>
     </div>
     <div>
       <p class="about-body rv d1">
-        I'm a data scientist focused on building intelligent systems that bridge analysis and real-world impact. My work spans machine learning, NLP pipelines, cloud-based ETL workflows, and BI dashboards. I enjoy designing solutions that are both technically rigorous and thoughtfully engineered — from training models and building LLM-driven products to deploying scalable analytics services. I'm especially interested in projects that solve meaningful problems using data at scale, currently finishing my MS in Data Science at the University at Buffalo.
+        Data doesn't tell stories on its own — I build the systems that make it speak. From NLP pipelines that cut manual review effort by 40% to ML models analyzing 3.5M+ taxi trips in near real-time, I focus on work that actually ships and scales. I recently graduated with an MS in Data Science from the University at Buffalo (GPA: 3.56), with hands-on experience across Python, SQL, AWS, LLMs, and BI tools. Right now I'm looking for full-time opportunities where I can bring both technical depth and product thinking to the table.
       </p>
       <div class="pills rv d2">
         <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">R</span>
@@ -327,7 +348,7 @@
     </div>
     <div class="proj-grid">
 
-      <div class="proj-card feat rv">
+      <div class="proj-card rv">
         <div class="proj-meta">
           <span class="proj-cat">NLP · LLMs</span>
           <span class="proj-yr">2025</span>
@@ -361,6 +382,45 @@
         <div class="proj-name">Rideflow Analytics</div>
         <p class="proj-desc">ML pipeline analyzing 3.5M+ NYC taxi trips to forecast hourly demand. Automated ETL on AWS cut processing time 40%. Normalized schema + tuned SQL indexes improved query latency 25%.</p>
         <a href="https://github.com/sahilsvachhani" target="_blank" class="open-proj">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Open project
+        </a>
+      </div>
+
+      <div class="proj-card rv">
+        <div class="proj-meta">
+          <span class="proj-cat">NLP · MLflow · LLMs</span>
+          <span class="proj-yr">2025</span>
+        </div>
+        <div class="proj-name">Sentiment Wars</div>
+        <p class="proj-desc">LLM vs ML sentiment analysis pipeline on 50K+ text samples. Fine-tuned DeBERTa-v3-base achieving 93.5% accuracy, outperforming DistilBERT and XGBoost by 8%. MLflow tracking for reproducibility.</p>
+        <a href="https://github.com/sahilsvachhani/Sentiment_Wars" target="_blank" class="open-proj">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Open project
+        </a>
+      </div>
+
+      <div class="proj-card rv d1">
+        <div class="proj-meta">
+          <span class="proj-cat">ML · Snowflake</span>
+          <span class="proj-yr">2024</span>
+        </div>
+        <div class="proj-name">Ride Prediction Analysis</div>
+        <p class="proj-desc">End-to-end ride-demand prediction pipeline on Snowflake with ETL and LightGBM forecasting. Interactive dashboards comparing actual vs predicted rides across key NYC zones. Optimized SQL for 25% faster queries.</p>
+        <a href="https://github.com/sahilsvachhani/Ride_Prediction_Analysis_Snowflake" target="_blank" class="open-proj">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Open project
+        </a>
+      </div>
+
+      <div class="proj-card rv d2">
+        <div class="proj-meta">
+          <span class="proj-cat">AI · JavaScript</span>
+          <span class="proj-yr">2024</span>
+        </div>
+        <div class="proj-name">Snap2Vibe AI Music Recommender</div>
+        <p class="proj-desc">AI-powered music recommendation app that analyzes images to detect mood and suggests matching tracks. Combines computer vision with music discovery for a unique user experience.</p>
+        <a href="https://github.com/sahilsvachhani/Snap2Vibe-AI-Music-Recommender" target="_blank" class="open-proj">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           Open project
         </a>
