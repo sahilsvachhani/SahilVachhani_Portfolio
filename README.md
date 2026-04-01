@@ -26,3 +26,8 @@ Live site: [https://sahilsvachhani.github.io/SahilVachhani_Portfolio/](https://s
 
 This site is hosted with GitHub Pages from the `main` branch using the root folder (`/`).
 
+## Analytics
+
+- **Google Analytics Dashboard:** [analytics.google.com](https://analytics.google.com) → Property: `Portfolio` (ID: `G-HE6733TVBZ`)
+- **Visitor Badge:** powered by [hits.sh](https://hits.sh)
+
